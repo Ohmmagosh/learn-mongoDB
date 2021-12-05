@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB</title>
+    <link rel="stylesheet" href="Slide.css">
+</head>
+<body>
+    <div class="box">
+        <h1>ฐานข้อมูล(DaTabase)</h1>
+        <div class="box-paragraph">
+            <p>กลุ่มข้อมูลที่ถูกรวบรวมและจัดเก็บไว้อย่างมีโครงสร้างโดยมีรูปแบบการจัดเก็บที่ชัดเจน เป็นระเบียบง่ายต่อการทำไปใช้ตามวัตถุประสงค์ที่ต้องการ</p>
+            <p>ฐานข้อมูลที่นิยมใช้แบ่งออกเป็น 2 แบบได้แก่</p>
+            <ul>
+                <li>ฐานข้อมูลเชิงสัมพันธ์ (Relational Database)</li>
+                <li>ฐานข้อมูลไม่ใช่เชิงสัมพันธ์ (์Non-Relation Database</li>
+            </ul>
+        </div>
+    </div>
+    <div class="box">
+        <h1>ฐานข้อมูลเชิงสัมพันธ์(Relational DaTabase)</h1>
+        <div class="box-paragraph">
+            <ul>
+                <li>เป็นฐานข้อมูลที่ใช้ภาษา SQL(Structure Query language)มาดำเนินการกับข้อมูล(เพิ่ม,ลบ,แก้ไข,ค้นหา)</li>
+                <li>จัดเก็บข้อมูลแบบตาราง(Table)</li>
+                <li>*กำหนดโครงสร้างการจัดเกบข้อมูลที่ชัดเจน (Structure Data)</li>
+                <li>มีรการเชื่อมโยงความสัมพันธ์กับข้อมูลตารางอื่นด้วย</li>
+            </ul>
+            <p>การปรับขนาด</p>
+            <p>เมื่อฐานข้อมูลมีการจัดเก็บข้อมูลในปริมาณมาก และอนาคตมีการปรับขนาดฐานข้อมูลให้ใหญ่ขึ้น
+                ฐานข้อมูลเชิงสัมพันธ์จะเป็นการปรับขนาดในแนวตั้ง(Vertical-Scaling)โดยติดตั้งอุปกรณ์เก็บข้อมูลเพื่อเพิ่มความจุ
+                เพิ่มแรมและหน่วยประมวลผลในมีประสิทธิภาพสูงขึ้น ส่งผลให้มีค่าใช้จ่ายที่สูงขึ้นและการอัพเกรดอุปกรณ์ต้องทำการปิดระบบชั่วขณะ
+            </p>
+        </div>
+    </div>
+    <div class="box">
+        <h1>Database Management System</h1>
+        <div class="box-paragraph">
+            <p>ระบบการจัดการฐานข้อมูล SQL ที่ได้รับความนิยมในปัจจุบัน</p>
+            <ul>
+                <li>MySQL</li>
+                <li>Oracle</li>
+                <li>PostgresSQL</li>
+                <li>SQL sever</li>
+            </ul>
+        </div>
+    </div>
+    <div class="box">
+        <h1>ฐานข้อมูลไม่ใช่เชิงสัมพันธ์ (Non-Relational Database)</h1>
+        <div class="box-paragraph">
+            <p><span>ฐานข้อมูลไม่ใช่เชิงสัมพันธ์</span>หรือเรียกอีกชื่อ คือ NoSQL
+            (Not-Only SQL)ถูกคิดค้นขึ้นเพื่อจัดการข้อจำกัดของการใช้งาน Relational Database ในอดีตเพื่อปรับโครงสร้าง
+            การจัดเก็บข้อมูลให่มีความยืดหยุ่นที่มากขึ้นด้วย
+            </p>
+            <p>NoSQLถูกนำมาใช้งานการสำหรับประมวลผลข้อมูลจากการใช้งาน Internet อย่างแพร่หลาย
+                ในปัจจุบันไม่วง่าจะมาจากSocial Media ต่างๆที่มีฐานข้อมูลขนาดใหญ่(ฺBig Data)เพื่อแปลข้อมูลที่มีความหลากหลายมากขึ้น
+                เช่น ข้อมูลรูปภาพ วีดีโอ เสียง ตัวอักษร เป็นต้น ซึ่งจะตอบโจทย์ในเรื่องความเร็วความยืดหยุ่นในการจัดเก็บข้อมูล
+            </p>
+            <ul>
+                <li>ไม่มีการจัดเก็บข้อมูลในแบบตารางที่มีความสัมพันธ์กัน</li>
+                <li>ไม่มีโครงสร้างการจัดเก็บข้อมูลที่แนนอน(Unstructure Data)</li>
+                <li>ง่ายต่อการปรับขนาดและโครงสร้าง</li>
+            </ul>
+            <p>การปรับขนาด</p>
+            <p>เมื่อฐานข้อมูลมีการจัดเก็บข้อมูลในปริมาณมาก และอนาคตมีการปรับขนาดฐานข้อมูลให้ใหญ่ขึ้น ฐานข้อมูลไม่ใช่เชิงสัมพันธ์จะเป็นการปรับขนาดในแนวนอน
+                (้Horizontal-Scaling)โดยเพิ่ม Sever เข้าไปแบ่งเบาภาระของข้อมูล สามารถรองรับข้อมูลขนาดใหญ่ขึ้น มีประสิทธฺภาพสูงขึ้น
+                ติดตั้งง่ายและเปลี่ยนแปลงได้ตลอดเวลาโดยไม่ต้องปิดระบบ
+            </p>
+        </div>
+    </div>
+    <div class="box">
+        <h1>รูปแบบการจัดเก็บข้อมูล </h1>
+        <div class="box-paragraph">
+            <p>NoSQL ไม่มีโครงสร้างการจัดเก็บข้อมูลที่แนนอน เพื่อที่จะสามารถปรับเปลี่ยนโครงสร้างได้ในอนาคตโดยเก็บข้อมูลอยู่ 4 รูปแบบ(ตามลักษณะการใช้งาน)</p>
+            <ul>
+                <li>Key - Value Store</li>
+                <li>Document Store</li>
+                <li>Graph Store</li>
+                <li>Wid Column Store</li>
+            </ul>
+            <ol>
+                <li>Key - Value Store
+                    <p>เป็นระบบจัดเก็บข้อมูลในรูปแบบที่เรียกว่า "Associative Array" หรืออาร์เรย์ของชุดข้อมูล
+                        ที่มีความสัมพันธ์กันในรูปแบบคู่คีย์(Key:Value)หรือเรียดอีกชื่อว่าDictionary
+                    </p>
+                    <p>โดยคีย์(key)จะทำหน้าที่เป็นตัวเชื่อมโยงไม่ยังค่า(value)ในโครงสร้างของฐานข้อมูลซึ่งจะมีได้แค่คีย์เดียว
+                        และการดึงข้อมูลต้องระบุคี่ย์ที่เก็บค่าของข้อมูลนั้นๆไว้
+                    </p>
+                </li>
+                <li>Document Store
+                    <p>เป็นฐานข้อมูลเชิงเอกสารที่ออกแบบมาเพื่อจัดเก็บข้อมูล ดึงข้อมูล และจัดการข้อมูลที่เรียกว่า"Document-Oriented"
+                        คือใช้โครงสร้างภายในของเอกสารเพื่อระบุการจัดเก็บข้อมูล ซึ่งมีลักษณะแบบกึ่งโครงสร้าง(Semi Structure Data)
+                        โดยเอกสาร(Document)จะถูกเข้ารหัสข้อมูลและจัดอยู่ในรูปของXML,JSON
+                    </p>
+                </li>
+                <li>Graph Store
+                    <p>เป็นการจัดเก็บข้อมูลและความสัมพันธ์ของข้อมูลในรูปแบบของกราฟ ข้อมูลด้านในจะเรียกว่าโหนด(Node)ซึ่งจะเก็บ Entity 
+                        ของข้อมูลและกำหนดความสัมพันธืที่เชื่อมโยงความสัมพันธ์ดังกล่าวผ่าน Edge หารใช้งานกราฟจะถูกนำเสนอผ่านความสัมพันธ์
+                        เช่น Social Network,AI และ Machine Learning เป็นต้น
+                    </p>
+                </li>
+                <li>Wid Column Store
+                    <p>เป็นการจัดเก็บข้อมูลเป็นเรคอร์ดหรือในรูปแบบตาราง แถว และคอลัมน์ซึ่งจะต่างจาก Relational Database
+                        คือจะมีความยืดหยุ่นมากกว่า ชื่อและรูปแบบของคอลัมน์สามารถเปลั่ยนจากแถวนึงไปเป็นอีกแถวนึงในตารางเดียวกันได้
+                        เละขยายคอลัมน์ได้จำนวนมาก(Extensible Record Store:ขยายหารจัดเก็บข้อมูลในแต่ละเรคอร์ด)
+                        อาจจะมองเป็นรูปแบบ Key:Value ในรูปแบบ 2 มิติก็ได้
+                    </p>
+                    <ol>ตัวอย่างฐานข้อมูลแบบ Wide Column Store
+                        <li>Cassandra</li>
+                        <li>HBase</li>
+                        <li>DynamoDB</li>
+                        <li>Microsoft Azure Cosmos DB</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="box">
+        <h1>MongoDB คืออะไร</h1>
+        <div class="box-paragraph">
+            <p>เป็นฐานข้อมูลเชิงเอกสาร (Document Store)สำหรับเก็บข้อมูลขนาดใหญ่ที่มีความยืดหยุ่นสูง
+                ง่ายต่อการปรับขนาดและทำงานข้ามแพลตฟอร์มได้ การจัดเก็บข้อมูลไม่ได้อยู่ในรูปแบบ ตาราง แลจะอยู่
+                ในรูปแบบเอกสาร json แล้วเซฟเก็บไว้ในเอกสารรูปแบบBinary Bson
+            </p>
+            <ul>มีองค์ประกอบอยู่ 3 ส่วนได้แก่
+                <li>Database</li>
+                <li>Colection</li>
+                <li>Document</li>
+            </ul>
+        </div>
+    </div>
+    <div class="box">
+        <h1>รู้จัก JSON และ BSON</h1>
+        <div class="box-paragraph">
+            <p>json(Javascript Object Notation)
+                ในเริ่มต้นถูกใช้ในการเขียนโปรแกรมด้วยJsvascript ในการแลกเปลี่ยนข้อมูลกับ Sever ปัจจุบัน
+                นิยมนำjson มาใช้เป็นรูปแบบในการแลกเปลี่ยนข้อมูลเว็บหรือแอพพลิเคชั่นมีหลายภาษาที่รองรับการแลกดปลี่ยน
+                ข้อมูลเช่น Java,Python,C# เป็นต้น
+            </p>
+            <ul>JSON รองรับการทำงานชนิดของข้อมูลพื้นฐานทั้งหมด ได้แก่
+                <li>number:ตัวเลข</li>
+                <li>String:สตริงหรือชุดข้อความโดยใช้เครื่องหมาย Double-quote("")</li>
+                <li>Boolean:ค่าบูลีน(True,False)</li>
+                <li>Null:ค่าว่าง</li>
+                <li>Array:อาร์เรย์หรือชุดข้อมูลซึ่งจะเป็นชนิดข้อมูลใดก็ได้ใช้สัญลักษณ์[]เป็นตัวแสดงและคั่นสมาชิกใน
+                    อาร์เรย์แต่ละค่าด้วยคอมม่า(,)เช่น[var1,var2]
+                </li>
+                <li>
+                    object:ชุดข้อมูลแบบคู่Key-Value แบบสตริงใช้สัญลักษณ์ปีกกาkey1:value1,key2:value2}
+                    และคอมม่าเป็นตัวแบ่งแต่ละคู่ และใช้โคล่อน(:)เป็นตัวแบ่งฝั่งระหว่าง Key และ Value
+                </li>
+            </ul>
+             <p>BSON จะมีขนาดเบาและรับส่งข้อมูลได้เร็ว้หมือนกับJSONโดยMongoDB สามารถเข้าถึงข้อมูลหรือ Object ในBSON เพื่อสร้างIndex ในการทำระบบสอบถามข้อมูล
+                 (Query) โดย BSON จะทำงานซ่อนอยู่เบื่องหลัง ส่วนการแสดงข้อมูลกับผู้ใช้จะเป็นJSON
+             </p>
+        </div>
+    </div>
+    <div class="box">
+        <h1>การสร้างและลบฐานข้อมูล</h1>
+        <div class="box-paragraph">
+            <ul>
+                <li>แสดงฐานข้อมูล
+                    <p>showdbs</p>
+                </li>
+                <li>สร้างหรือเลือกฐานข้อมูล
+                    <p>use ชื่อฐานข้อมูล(ในกรณีที่ยังไม่มีฐานข้อมูลจะสร้างฐานข้อมูลขึ้นมา แต่ถ้ามีฐานข้อมูลจะเรียกฐานข้อมูลมาใช้)</p>
+                </li>
+                <li>ลบฐานข้อมูล
+                    <p>db.dropDatabase()(ต้องเข้าไปทำงานในฐานข้อมูลก่อนค่อยลบ)</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="box">
+        <h1></h1>
+        <div class="box-paragraph">
+            
+        </div>
+    </div>
+    <div class="box">
+        <h1></h1>
+        <div class="box-paragraph">
+            
+        </div>
+    </div>
+    <div class="box">
+        <h1></h1>
+        <div class="box-paragraph">
+            
+        </div>
+    </div>
+    <div class="box">
+        <h1></h1>
+        <div class="box-paragraph">
+            
+        </div>
+    </div>
+    <div class="box">
+        <h1></h1>
+        <div class="box-paragraph">
+            
+        </div>
+    </div>
+    <div class="box">
+        <h1></h1>
+        <div class="box-paragraph">
+            
+        </div>
+    </div>
+    <div class="box">
+        <h1></h1>
+        <div class="box-paragraph">
+            
+        </div>
+    </div>
+    <div class="box">
+        <h1></h1>
+        <div class="box-paragraph">
+            
+        </div>
+    </div>
+    <div class="box">
+        <h1></h1>
+        <div class="box-paragraph">
+            
+        </div>
+    </div>
+    <div class="box">
+        <h1></h1>
+        <div class="box-paragraph">
+            
+        </div>
+    </div>
+    <div class="box">
+        <h1></h1>
+        <div class="box-paragraph">
+            
+        </div>
+    </div>
+    <div class="box">
+        <h1></h1>
+        <div class="box-paragraph">
+            
+        </div>
+    </div>
+    <div class="box">
+        <h1></h1>
+        <div class="box-paragraph">
+            
+        </div>
+    </div>
+    <div class="box">
+        <h1></h1>
+        <div class="box-paragraph">
+            
+        </div>
+    </div>
+    <div class="box">
+        <h1></h1>
+        <div class="box-paragraph">
+            
+        </div>
+    </div>
+    <div class="box">
+        <h1></h1>
+        <div class="box-paragraph">
+            
+        </div>
+    </div>
+    <div class="box">
+        <h1></h1>
+        <div class="box-paragraph">
+            
+        </div>
+    </div>
+</body>
+</html>

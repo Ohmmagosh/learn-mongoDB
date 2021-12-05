@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+*{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 800;
+    color: white;
+    background: cornsilk;
+}
+.box,.box-paragraph ,div ,h1 ,p,span,ul,li,ol{
+    
+    background-color: crimson;
+}
+.box{
+    margin: 30px ;
+    padding: 20px;
+    border: 5px dashed rgb(145, 16, 42);
+}
+.box-paragraph {
+    margin: 10px auto;
+    padding: 5px;
+    text-indent: 20px;
+}
