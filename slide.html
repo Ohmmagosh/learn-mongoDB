@@ -174,19 +174,38 @@
         </div>
     </div>
     <div class="box">
-        <h1></h1>
+        <h1>การเพิ่ม Document</h1>
         <div class="box-paragraph">
-            
+            <ul>
+                <li>เพิ่มDocument
+                    <p>db.ชื่อCollection.insertOne(&ltDocument>)</p>
+                </li>
+                <li>การเพิ่มหลายDocument
+                    <p>db.ชื่อCollection.insertMany([&ltDocument>])</p>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="box">
-        <h1></h1>
+        <h1>การสอบถามข้อมูล Document ใน Collection</h1>
         <div class="box-paragraph">
-            
+            <ul>
+                <li>findOne()
+                    <p>สอบถามข้อมูล Document จาก Collection ตามเงือนไหขที่กำหนดผลจากการสอบถาม
+                        ได้ผลลัพธ์เพียง Document เดียว หากเจอ Document หลายรายการจะเลือกเอารายการแรกมาใช้งาน
+                        ถ้าไม่เจอจะได้ค่า Null
+                    </p>
+                </li>
+                <li>find()
+                    <p>สอบถามข้อมูล Document จาก Collection ถ้าไม่กำหนดเงือนไขจะเลือก Document ทั้งหมดมาใช้งาน แต่สามารถกรอง (filter)หรือ เลือกข้อมูลภายใน Document ได้โดยระบุ
+                        เงือนไขหรือ Parameter เข้าไป ถ้าเงือนไขไม่ตรง จะได้ Dcoument เป็นค่า Null
+                    </p>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="box">
-        <h1></h1>
+        <h1>ตัวกำเนินการเปรียบเทียบ</h1>
         <div class="box-paragraph">
             
         </div>
